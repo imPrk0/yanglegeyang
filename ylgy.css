@@ -1,0 +1,131 @@
+/**
+ * Name: 刷羊了个羊前端样式表
+ * Author: Prk
+ * Website: https://imprk.me/
+ * Date: 2022-09-18 (GMT+8)
+ * Time: 05:02 (AM, GMT+8)
+ * Location: People's Republic of China
+ */
+
+* {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    background-color: #75c473;
+    padding-bottom: 2rem;
+}
+
+body>.container {
+    width: 800px;
+    background: url(https://vkceyugu.cdn.bspapp.com/VKCEYUGU-0accce98-f18a-476c-ae72-1ab863d93eda/d33f01e3-8aaf-432d-86c5-98dfc8e3387e.jpg) no-repeat top;
+    background-size: 100%
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 2rem;
+    height: 100%;
+    top: 15rem;
+    position: relative;
+    padding: 2rem;
+    box-shadow: 0 .4rem 1rem .1rem rgb(0 0 0 / 20%)
+}
+
+.box .form-control {
+    border-radius: 1rem
+}
+
+.box .form-control:focus {
+    border-color: #75c473;
+    box-shadow: 0 0 0 .1rem #75c473
+}
+
+.box .alert-success {
+    border-radius: 1rem
+}
+
+.box button {
+    border-radius: 1rem;
+    height: calc(3.5rem + 2px);
+    line-height: 1.25;
+}
+
+.box .btn-success {
+    background-color: #75c473;
+    color: #fff;
+    border-color: #75c473
+}
+
+.box #jiaocheng .btn svg {
+    margin-top: -2px
+}
+
+.box #jiaocheng .btn3 {
+    margin-top: 1rem
+}
+
+.box #jiaocheng .btn3 a {
+    display: inline-flex;
+    font-size: .8rem;
+    background-color: #75c473;
+    color: #fff;
+    border-radius: .25rem;
+    margin-bottom: .2rem;
+    padding: .5rem .5rem
+}
+
+.box .uid .form-floating {
+    float: left;
+}
+
+.box .uid .form-floating .form-control {
+    float: left;
+}
+
+.box .uid .btn-secondary {
+    float: left;
+    border-radius: 0 1rem 1rem 0
+}
+
+.box .uid #uid {
+    border-radius: 1rem 0 0 1rem;
+}
+
+.box .uid .btn-success {
+    float: right;
+}
+
+@media screen and (max-width:800px) {
+    body>.container {
+        width: 100%
+    }
+}
+
+@media screen and (max-width:500px) {
+    .box {
+        top: 8rem;
+    }
+
+    .box .uid .form-floating {
+        width: 70%;
+    }
+
+    .box .uid .btn-secondary {
+        width: 30%;
+    }
+
+    .box .uid .btn-success {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .box {
+        top: 10rem
+    }
+}
+
+/* by Prk!
