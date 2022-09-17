@@ -23,7 +23,15 @@ https://cat-match.easygame2021.com/sheep/v1/game/user_info
 
 | 参数名         | 参数固定值 | 说明                      |
 | :-----------: | :-------: | :----------------------: |
-| uid           | *不固定*   | 你要查询 TOKEN 的账号 UID |
-| t             | *不固定*   | 懒得解释  |
+| uid           | _不固定_   | 你要查询 TOKEN 的账号 UID |
+| t             | _不固定_   | 懒得解释  |
 | content-type  | `application/json`  | 你可以试试别的值，比如 `application/javascript` 我反正懒的试 |
 | User-Agent    | `Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.28(0x18001c26) NetType/WIFI Language/zh_CN`| 微信的 UA |
+
+会响应下面内容：
+
+_说实话响应头里的内容一点用都没有_
+
+``` json
+{"err_code":10007,"err_msg":"用户不存在","data":null}{"err_code":0,"err_msg":"","data":null}
+```
