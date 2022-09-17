@@ -1,6 +1,6 @@
 # 刷羊了个羊
 
-因该游戏仅限中共国，所以文档使用中文。
+因该游戏仅限中共国，所以文档使用中文。  
 **Since the game is limited to People's Republic China, the documentation is in Chinese.**
 
 
