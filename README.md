@@ -21,6 +21,20 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTQzMjcyNDYsIm5iZiI6MTY2MzIyNTA
 
 ### 一、UID 获取 TOKEN 的方法
 
+#### 0. 序言
+
+为了方便大家，我为此封装了一个 API。  
+大家只需要传参 `uid` 使用 `GET` 或 `POST` 请求方法到下面地址
+
+``` url
+https://api.cprk.cc/ylgy
+```
+
+一定是响应 JSON 格式  
+如果返回的 JSON 中 `code` 的值是 `0` (Int) 那就是成功，`data` 的值就是 TOKEN (Str)  
+否则就要看 JSON 中 `msg` 的值即报错信息 (Str)  
+_我的 API 通常会对你的内容进行缓存 12 小时_
+
 #### 1. 构造 `GET` 网络请求到下面地址：
 
 ``` url
@@ -149,13 +163,13 @@ https://cat-match.easygame2021.com/sheep/v1/game/game_over
 
 传值如下（懒的做表）：
 
-`rank_score`    =>  `1`
-`rank_state`    =>  `1`
-`rank_time`     =>  `0`
-`rank_role`     =>  `1`
-`skin`          =>  `1`
-`t`             =>  **这里就是获取到的 TOKEN 的值**
-`content-type`  =>  `application/json`
+`rank_score`    =>  `1`  
+`rank_state`    =>  `1`  
+`rank_time`     =>  `0`  
+`rank_role`     =>  `1`  
+`skin`          =>  `1`  
+`t`             =>  **这里就是获取到的 TOKEN 的值**  
+`content-type`  =>  `application/json`  
 `User-Agent`    =>  `Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.28(0x18001c26) NetType/WIFI Language/zh_CN`
 
 通常会返回：
