@@ -13,6 +13,12 @@
 
 ## 原理
 
+t的默认值：
+
+``` text
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTQzMjcyNDYsIm5iZiI6MTY2MzIyNTA0NiwiaWF0IjoxNjYzMjIzMjQ2LCJqdGkiOiJDTTpjYXRfbWF0Y2g6bHQxMjM0NTYiLCJvcGVuX2lkIjoiIiwidWlkIjo4MzU0MzAxNCwiZGVidWciOiIiLCJsYW5nIjoiIn0.5qpiRRjxwUmN1U8Qst8dFBMWMQyWi26DcfTgHIITZds
+```
+
 ### 一、UID 获取 TOKEN 的方法
 
 #### 1. 构造 `GET` 网络请求到下面地址：
@@ -26,7 +32,7 @@ https://cat-match.easygame2021.com/sheep/v1/game/user_info
 | 参数名         | 参数固定值 | 说明                      |
 | :-----------: | :-------: | :----------------------: |
 | uid           | _不固定_   | 你要查询 TOKEN 的账号 UID |
-| t             | `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTQzMjcyNDYsIm5iZiI6MTY2MzIyNTA0NiwiaWF0IjoxNjYzMjIzMjQ2LCJqdGkiOiJDTTpjYXRfbWF0Y2g6bHQxMjM0NTYiLCJvcGVuX2lkIjoiIiwidWlkIjo4MzU0MzAxNCwiZGVidWciOiIiLCJsYW5nIjoiIn0.5qpiRRjxwUmN1U8Qst8dFBMWMQyWi26DcfTgHIITZds` | 含义不明 |
+| t             | **请看上方“t的默认值”** | 含义不明 |
 | content-type  | `application/json`  | 你可以试试别的值，比如 `application/javascript` 我反正懒的试 |
 | User-Agent    | `Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.28(0x18001c26) NetType/WIFI Language/zh_CN`| 微信的 UA |
 
@@ -107,7 +113,7 @@ https://cat-match.easygame2021.com/sheep/v1/user/login_tourist
 | 参数名         | 参数固定值 | 说明                      |
 | :-----------: | :-------: | :----------------------: |
 | uuid           | _不固定_   | 上一步你获取到的微信的 UUID ，也就是 `data` 中 `wx_open_id` 的值 |
-| t             | `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTQzMjcyNDYsIm5iZiI6MTY2MzIyNTA0NiwiaWF0IjoxNjYzMjIzMjQ2LCJqdGkiOiJDTTpjYXRfbWF0Y2g6bHQxMjM0NTYiLCJvcGVuX2lkIjoiIiwidWlkIjo4MzU0MzAxNCwiZGVidWciOiIiLCJsYW5nIjoiIn0.5qpiRRjxwUmN1U8Qst8dFBMWMQyWi26DcfTgHIITZds` | 含义不明 |
+| t             | **请看上方“t的默认值”** | 含义不明 |
 | content-type  | `application/json`  | 你可以试试别的值，比如 `application/javascript` 我反正懒的试 |
 | User-Agent    | `Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.28(0x18001c26) NetType/WIFI Language/zh_CN`| 微信的 UA |
 
